@@ -1,0 +1,12 @@
+<div class="w-full container-bg flex align-items-center justify-content-end" style="height: 72px;">
+<div class="button">
+    <img src="/assets/images/person-cog.svg" alt="Icon">
+</div>
+</div>
+
+<div class="grid gap-3 justify-content-center container-bg">
+    <p-card *ngFor="let stock of stockList">
+        <app-image-container [imagePath]="stock.image"></app-image-container>
+        <app-description [descriptionDetails]="stock"></app-description>
+    </p-card>
+</div>
